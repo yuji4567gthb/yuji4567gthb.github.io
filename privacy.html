@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MCE Mac プライバシーポリシー</title>
+<style>
+  :root { --fg:#1d1d1f; --muted:#555; --bg:#ffffff; --line:#e5e5e5; --link:#0b57d0; }
+  @media (prefers-color-scheme: dark) { :root { --fg:#f2f2f2; --muted:#b0b0b0; --bg:#121212; --line:#2a2a2a; --link:#8ab4f8; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif; line-height:1.8; }
+  main { max-width:720px; margin:0 auto; padding:48px 16px; }
+  h1 { font-size:1.5rem; margin:0 0 4px; }
+  h2 { font-size:1.1rem; margin:28px 0 4px; }
+  p.meta { color:var(--muted); margin-top:0; }
+  section.en { border-top:1px solid var(--line); margin-top:40px; padding-top:8px; }
+  a { color:var(--link); }
+</style>
+</head>
+<body>
+<main>
+  <h1>MCE Mac プライバシーポリシー</h1>
+  <p class="meta">制定日：2026年11月20日</p>
+
+  <h2>1. 対象</h2>
+  <p>MCE Mac（以下「本ツール」）は、開発者本人のGmailアカウントだけを対象とする個人用ツールです。開発者以外の利用者はいません。</p>
+
+  <h2>2. 取得する情報</h2>
+  <p>本ツールは、Gmail API（スコープ：gmail.modify）を通じて、次の情報を読み取ります。</p>
+  <ul>
+    <li>メールのヘッダー（差出人、宛先、件名など）と、付いているラベル</li>
+    <li>分類の判断に必要な場合に限り、本文の冒頭部分</li>
+  </ul>
+
+  <h2>3. 利用目的</h2>
+  <p>取得した情報は、メールにラベルを付けて整理する目的にだけ使います。本ツールが行う操作は、ラベルの追加・削除（受信トレイからのアーカイブを含む）だけです。メールの送信、削除、ゴミ箱への移動は行いません。</p>
+
+  <h2>4. 保存と第三者提供</h2>
+  <ul>
+    <li>処理は、開発者が所有するコンピュータの中だけで行います。</li>
+    <li>メール本文は保存しません。分類の記録（差出人・宛先・件名・付けたラベル）だけを、暗号化されたディスク上に一定期間保存します。</li>
+    <li>取得した情報を、第三者に提供・販売することはありません。外部のAIサービスにメールの内容を送ることもありません。</li>
+    <li>Gmail APIから受け取った情報の取り扱いは、Google API Services User Data Policy（Limited Use の要件を含む）に従います。</li>
+  </ul>
+
+  <h2>5. アクセスの取り消し</h2>
+  <p>Googleアカウントの「サードパーティ製のアプリとサービス」から、本ツールのアクセスをいつでも取り消せます。</p>
+
+  <section class="en">
+    <h2>Privacy Policy (English summary)</h2>
+    <p>MCE Mac is a personal tool used only by its developer, for the developer's own Gmail account. Using the Gmail API (gmail.modify scope), it reads message headers, labels and, when needed, the beginning of the message body, solely to apply labels (including archiving). It never sends, deletes or trashes email. All processing happens on the developer's own computer; message bodies are not stored, and no data is shared with or sold to third parties or sent to external AI services. Use of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements. Access can be revoked at any time from the Google Account's third-party apps settings.</p>
+  </section>
+</main>
+</body>
+</html>
